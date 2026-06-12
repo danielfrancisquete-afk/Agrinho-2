@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agrinho 2026 | Agro Forte e Sustentável</title>
+    <style>
+        /* Cores Temáticas do Agro e Configurações Gerais */
+        :root {
+            --verde-escuro: #1b4332;
+            --verde-principal: #2d6a4f;
+            --verde-claro: #d8f3dc;
+            --marrom-terra: #6c584c;
+            --dourado-ouro: #adc178;
+            --branco: #ffffff;
+            --fundo-suave: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--fundo-suave);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Topo / Cabeçalho Enfeitado */
+        header {
+            background: linear-gradient(135deg, var(--verde-escuro), var(--verde-principal));
+            color: var(--branco);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 8px solid var(--dourado-ouro);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "🌱";
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.1;
+            right: -20px;
+            bottom: -20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--verde-claro);
+            font-weight: 300;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Banner de Destaque */
+        .banner-tema {
+            background-color: var(--branco);
+            border-left: 10px solid var(--verde-principal);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .banner-tema h2 {
+            color: var(--verde-escuro);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .badge-ano {
+            background-color: var(--marrom-terra);
+            color: var(--branco);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* Seções de Conteúdo (Cards Bonitos) */
+        .grid-conteudo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: var(--branco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+            border-top: 5px solid var(--verde-principal);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-decoracao {
+            background-color: var(--verde-claro);
+            padding: 20px;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .card-info {
+            padding: 25px;
+        }
+
+        .card-info h3 {
+            color: var(--verde-escuro);
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        /* Seção Sobre o Projeto */
+        .sobre-projeto {
+            background: linear-gradient(to right, #ffffff, var(--verde-claro));
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .sobre-projeto h3 {
+            color: var(--verde-escuro);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--verde-escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 60px;
+            border-top: 5px solid var(--marrom-terra);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsividade para Celulares */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .container { margin: 20px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <h1>Programa Agrinho 2026</h1>
+        <p>Inovação, Educação e Sustentabilidade no Campo</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Banner do Tema Oficial -->
+        <section class="banner-tema">
+            <span class="badge-ano">Edição 2026</span>
+            <h2>"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"</h2>
+            <p>Descubra como a tecnologia e a consciência ecológica andam juntas para cultivar o amanhã.</p>
+        </section>
+
+        <!-- Cards Enfeitados com Ícones e Informações -->
+        <main class="grid-conteudo">
+            
+            <div class="card">
+                <div class="card-decoracao">🚜</div>
+                <div class="card-info">
+                    <h3>Produção Consciente</h3>
+                    <p>O agronegócio moderno utiliza recursos tecnológicos avançados para produzir alimentos em grande escala, reduzindo o desperdício de água e insumos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-decoracao">🌳</div>
+                <div class="card-info">
+                    <h3>Preservação Ambiental</h3>
+                    <p>Manter o equilíbrio ecológico é fundamental. Cuidar do solo, proteger as florestas e conservar as nascentes garante a continuidade da vida e do cultivo.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-decoracao">💡</div>
+                <div class="card-info">
+                    <h3>Tecnologia e Robótica</h3>
+                    <p>A robótica e a programação transformam o campo, trazendo soluções inteligentes e protótipos inovadores para os desafios diários dos produtores rurais.</p>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Bloco de Texto Explicativo / Sobre Mim -->
+        <section class="sobre-projeto">
+            <h3><span>🌾</span> Sobre este Projeto</h3>
+            <p>Este site foi desenvolvido com o objetivo de compartilhar os aprendizados obtidos através das atividades e pesquisas do <strong>Concurso Agrinho 2026</strong>. Acreditamos que a conexão entre o conhecimento da escola e a realidade do campo é a chave para transformar a nossa comunidade e garantir um futuro próspero.</p>
+        </section>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Concurso Agrinho | Organizado pelo Sistema FAEP / SENAR-PR</p>
+    </footer>
+
+</body>
+</html>
